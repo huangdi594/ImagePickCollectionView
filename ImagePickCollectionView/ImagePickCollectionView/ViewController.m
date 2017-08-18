@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "AddImageCollectionView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet AddImageCollectionView *add;
 
 @end
 
@@ -16,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _add.type = 0;
 }
 
 
